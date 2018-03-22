@@ -1,3 +1,5 @@
+// link:https://leetcode.com/problems/self-dividing-numbers/description/
+
 /**
  * @param {number} left
  * @param {number} right
@@ -26,4 +28,4 @@ var selfDividingNumbers = function(left, right) {
 	}
 	return num;
 };
-console.log(selfDividingNumbers(47, 85))
+

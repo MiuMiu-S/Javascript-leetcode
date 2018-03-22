@@ -1,5 +1,3 @@
-// link:https://leetcode.com/problems/self-dividing-numbers/description/
-
 /**
  * @param {number} left
  * @param {number} right
@@ -22,3 +20,20 @@ var selfDividingNumbers = function(left, right) {
 	return num;
 };
 
+
+//Other solutions
+var selfDividingNumbers = function(left, right) {
+    let results = [];
+    for (let number = left; number <= right; number++) {
+        if (
+            number
+                .toString()
+                .split('')
+                .map(d => d !== 0 && number % d === 0)
+                .reduce((acc, val) => acc && val)
+        ) {
+            results.push(number);
+        }
+    }
+    return results;
+};

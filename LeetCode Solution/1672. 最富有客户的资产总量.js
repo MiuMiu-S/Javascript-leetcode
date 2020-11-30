@@ -26,6 +26,12 @@
 // 输入：accounts = [[2,8,7],[7,1,3],[1,9,5]]
 // 输出：17
  
+// 提示：
+// m == accounts.length
+// n == accounts[i].length
+// 1 <= m, n <= 50
+// 1 <= accounts[i][j] <= 100
+
 /**
  * @param {number[][]} accounts
  * @return {number}
